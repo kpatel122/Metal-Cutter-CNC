@@ -1,0 +1,25 @@
+P1 Expansion port
+DB25	Mesa	MPG-wire-colour	Function
+15		IO37	Brown			Z Select
+16		IO39	Yellow/Black	Y Select
+17		IO41	Yellow			X Select
+10		IO47	Gray			X1
+11		IO48	Gray/Black		X10
+12		IO49	Orange			x100
+18		GND		Orangle/Black	switches GND (v5 gnd)
+
+TB2
+Mesa	MPG-wire-colour	Function
+1		White/Black		LED-
+6		Green/Black		LED+
+12		Red				+5V
+9		Black			gnd (5v gnd)
+7		Green			A+
+8		Purple			A-
+10		White			B+
+11		Purple/Black	B-
+
+TB3
+Mesa	MPG-wire-colour	Function
+IO10	Blue/Black		E-STOP-INPUT
+24v-GND	Blue			E-STOP-GND
