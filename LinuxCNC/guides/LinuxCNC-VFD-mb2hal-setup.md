@@ -70,7 +70,7 @@ Two section types:
 type being `.int` or `.float` for register transactions. With `NELEMENTS = 1`
 the element index is always `00`.
 
-**✅ Addressing offset — confirmed correct on this install:**
+** Addressing offset — confirmed correct on this install:**
 The manual warns some Modbus masters use zero-based addressing and register
 numbers may need `-1`. Confirmed empirically: with `FIRST_ELEMENT = 5`,
 `vfd_status.00.int` read `64` (`0x0040`) when DI1 was enabled and `0` when
