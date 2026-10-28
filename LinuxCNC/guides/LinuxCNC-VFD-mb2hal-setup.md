@@ -1,12 +1,12 @@
-# Optidrive E3 — mb2hal Setup (LinuxCNC Host)
+# Optidrive E3 mb2hal Setup (LinuxCNC Host)
 
-Goal: replace the manual `mbpoll` commands in `commands.txt` with a HAL component
+replace the manual `mbpoll` commands in `commands.txt` with a HAL component
 (`mb2hal`) that runs continuously inside LinuxCNC, exposing VFD run/stop, speed,
 and status as HAL pins. These pins then get netted to the existing spindle
 signals in `printnc-test1.hal` (`spindle.0.on`, `spindle.0.speed-out-abs`, etc.)
 so the Axis GUI's existing spindle controls drive the VFD over Modbus.
 
-Do all of this on the LinuxCNC controller machine, not the dev machine.
+
 
 Syntax below is pulled directly from the LinuxCNC 2.9 docs
 (`linuxcnc.org/docs/2.9/html/drivers/mb2hal.html`), matching your 2.9.8 install.
@@ -284,7 +284,7 @@ only supports single-direction run via Modbus.
    Confirm it ramps down and stops.
 
    While a command is active, open a **separate terminal** (don't use
-   `halrun` — LinuxCNC already owns the running HAL instance, so plain
+   `halrun`  LinuxCNC already owns the running HAL instance, so plain
    `halcmd` connects straight to it) and check the signals are actually
    propagating, not just coincidentally working:
    ```bash
