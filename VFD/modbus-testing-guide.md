@@ -1,4 +1,4 @@
-# Optidrive E3 — Modbus RTU Testing Guide
+# Optidrive E3 Modbus RTU Testing Guide
 
 ## Connection
 
